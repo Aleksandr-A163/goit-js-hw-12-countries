@@ -1,7 +1,104 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(236, 243, 232);
+    font-weight: 400;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-left: 50px;
+  }
+  
+  .country-input {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 700px;
+    height: 60px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+ 
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+  .country-input:hover {
+    border: 1px solid #dbb32e;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #dbb32e;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #dbb32e;
+    font-weight: 700;
+  }
+  
+  button:hover,
+  button:focus {
+    background-color: #886f1d;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .countries-list {
+    margin-top: 50px;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .country-name {
+    text-align: center;
+  }
+  
+  .country {
+    width: 100%;
+padding-left: 200px;
+    display: flex;
+    font-size: 24px;
+  }
+  
+  .property {
+    width: 20%;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+  }
+
+  .property-name {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  .flag-img {
+    border: 1px solid rgb(207, 166, 166);
+    width: 350px;
+    margin-left: 20px;
+  }
+  
+  .country-container {
+    margin-top: 25px;
+    color: #97c005;
+    font-weight: 700;
+  }
+  
+  .country {
+    cursor: pointer;
+  }
+
+
+  
+  .lang-item {
+    margin-top: 2px;
+  }
+  
+  p {
+    margin-right: 20px;
+  }
