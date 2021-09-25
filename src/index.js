@@ -21,6 +21,8 @@ refsMarkUP.input.addEventListener('input', debounce(onInput, 600))
 
 function onInput(e) {
     const searchQuery= e.target.value;
+    refsMarkUP.countryContainer.innerHTML = '';
+    refsMarkUP.countriesMarkUp.innerHTML = '';
     fetchCountries(searchQuery)
     .then((countries)=> {
         console.log(countries);
@@ -28,7 +30,7 @@ function onInput(e) {
           alertCountry(textNoFound, 'error');
             return;
         }
-        if(countries.length < 10){
+        if(countries.length >= 2 && countries.length < 10){
           renderCountries(countries);
         }  else  {
           alertCountry(textManyCountries,'notice'); 
